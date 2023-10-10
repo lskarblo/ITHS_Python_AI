@@ -13,7 +13,7 @@ random.shuffle(deck)
 player_hand = []
 computer_hand = []
 
-# Helper function to calculate the value of a hand
+# Helper function to calculate the value of a hand tjoho
 def hand_value(hand):
     value = 0
     num_aces = 0
