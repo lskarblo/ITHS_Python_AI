@@ -83,7 +83,7 @@ while not Done:
                 break
 
     # Computer's turn
-    if player_score <= 21:
+    if player_score < 21:
         while computer_score < 17:
             computer_hand.append(deck.pop())
             computer_score = hand_value(computer_hand)
