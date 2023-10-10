@@ -7,14 +7,9 @@ suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
 ranks = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace']
 
 deck = [{'rank': rank, 'suit': suit} for suit in suits for rank in ranks]
-deck2 = [(suit, rank) for suit in suits for rank in ranks]
+#deck2 = [(suit, rank) for suit in suits for rank in ranks]
 
 random.shuffle(deck)
-
-#print(type(deck))
-
-print(deck[]
-print(deck2.index())
 
 player_hand = []
 computer_hand = []
