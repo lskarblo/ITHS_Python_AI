@@ -10,11 +10,13 @@ deck = [{'rank': rank, 'suit': suit} for suit in suits for rank in ranks]
 
 random.shuffle(deck)
 
+#print(type(deck))
+
 player_hand = []
 computer_hand = []
 
-# Helper function to calculate the value of a hand tjoho
 def hand_value(hand):
+# Calculate the value of a hand
     value = 0
     num_aces = 0
     for card in hand:
@@ -36,6 +38,7 @@ def hand_value(hand):
 
 
 def print_hand_value(prompt, hand, score):
+# Print out a hand
     print(prompt)
     for card in hand:
         print(f"{card['rank']} of {card['suit']}")
