@@ -37,7 +37,7 @@ def hand_value(hand):
 
 def print_hand_value(prompt, hand, score):
     print(prompt)
-    for card in player_hand:
+    for card in hand:
         print(f"{card['rank']} of {card['suit']}")
     print(f"Total Value: {score}")
 
@@ -64,6 +64,7 @@ while not Done:
         print("Congratulations! You have a blackjack. You win!")
         break
     elif computer_score == 21:
+        print_hand_value("\nComputer Hand:", computer_hand, computer_score)
         print("Computer has a blackjack. You lose!")
         break
 
