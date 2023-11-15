@@ -10,17 +10,17 @@ Datamängden har ju vissa egenskaper. Den sträcker sig från uppgifter om perso
 
 ## Förslag på AI projekt 
 
-Förslagen är tänkta att kunna ge förutsägelser beroende av registrerade parametrar för vilka vi idag har resultat (supervised learning). Datamängden reduceras ju betänkligt när man fokuserar på någon viss diagnos eller motsvarande, men kan fortfarande vara tillräcklig för att träna en modell. Det betyder dock förmodligen att korrelationen mellan kombinationer av indata och utfall behöver vara bättre (tydligare) än vid en riktigt stor datamängd.
+Förslagen är tänkta att kunna ge förutsägelser beroende av registrerade parametrar för vilka vi idag har resultat (supervised learning). Datamängden reduceras ju betänkligt när man fokuserar på någon viss diagnos eller motsvarande, men kan fortfarande vara tillräcklig för att träna en modell. Det betyder dock förmodligen att korrelationen mellan kombinationer av indata och utfall behöver vara bättre (tydligare) än vid en riktigt stor datamängd. 
 
-- Förutse diagnoskoder utgående från skriven text. Svårigheter att åstadkomma datasetet med fritext. Ger många kombinationer av utfall (typ 2-10 st koder i många olika kombinationer). Intressant projekt!
+- Förutse diagnoskoder utgående från skriven text. Svårigheter att åstadkomma datasetet med fritext. Ger många kombinationer av utfall (typ 2-10 st koder i många olika kombinationer). Intressant projekt! Det är oklart för mig hur det skulle gå att lösa. Det kommer ju att vara vissa textsnuttar som kommer att peka mot en diagnos, medan hela texten pekar på flera diagnoser. Möjligen går det att göra någon slags koppling genom att varje diagnoskod har en klartext som i sin tur har sannolikt har en motsvarighet - om än inte ordagrann - i texten. Om man betraktar varje kombination av koder som en vektor så kan det hända att datamängden helt enkelt är för liten för att träna en modell eftersom variationerna är för många med bara drygt 470 000 patienter. Klassificeringsproblem.
 
-- Förutse någon viss diagnos utgående från vissa mätvärden eller kodade data. Intressant att titta på ur flera aspekter ungefär om i t-shirtfallet, där vissa data (givet att man har en mall för kroppsmått på t-shirts mappat till storlek) mer exakt skulle kunna prediktera resultatet och där det är intressant att reducera ner mängden inparametrar för att kolla om modellen fortfarande har goda möjligheter till korrekt prediktion. Det skulle ex kunna innebära att man med färre labdata för diagnostik skulle kunna göra en förutsägelse om något visst medicinskt utfall.
+- Förutse någon viss diagnos utgående från vissa mätvärden eller kodade data. Intressant att titta på ur flera aspekter ungefär om i t-shirtfallet, där vissa data (givet att man har en mall för kroppsmått på t-shirts mappat till storlek) mer exakt skulle kunna prediktera resultatet och där det är intressant att reducera ner mängden inparametrar för att kolla om modellen fortfarande har goda möjligheter till korrekt prediktion. Det skulle ex kunna innebära att man med färre labdata för diagnostik skulle kunna göra en förutsägelse om något visst medicinskt utfall. Klassificeringsproblem.
 
-- Förutse vistelsetid utgående från vissa diagnoser, mätvärden, persondata, el dyl. Vet inte om det kan vara så intressant som en faktisk tillämpning men skulle ev kunna ge en förutsägelse om platsläget eller vårdtyngden på avdelningar eller hela sjukhuset. Detta liknar i o f s triage-projektet till viss del.
+- Förutse vistelsetid utgående från vissa diagnoser, mätvärden, persondata, el dyl. Vet inte om det kan vara så intressant som en faktisk tillämpning men skulle ev kunna ge en förutsägelse om platsläget eller vårdtyngden på avdelningar eller hela sjukhuset. Detta liknar i o f s triage-projektet till viss del. Regressionsproblem.
 
-- Förutsägelser för operationstid eller dylikt utgående från olika waypoints i operationsprocessen.
+- Förutsägelser för operationstid eller dylikt utgående från olika waypoints i operationsprocessen. Regressionsproblem.
 
-- Förutsägelser om behov av eftervård efter olika typer av åtgärder beroende på patientdata och rimligt berörda mätvärden.
+- Förutsägelser om behov av eftervård efter olika typer av åtgärder beroende på patientdata och rimligt berörda mätvärden. Klassificeringsproblem.
 
 ## Lär känna dina data
 
